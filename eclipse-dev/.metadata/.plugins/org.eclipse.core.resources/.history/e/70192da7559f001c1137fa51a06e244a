@@ -1,0 +1,16 @@
+package pack4;
+interface B{
+	void test(int i);
+}
+public class M2 {
+	public static void main(String[] args) {
+		B b1 = (int i) -> System.out.println("from test : " + i);
+		
+		B b2 = (i) -> System.out.println("from test : " + i);
+		
+		B b3 = (a) -> {
+			System.out.println("from test : " + a);
+			System.out.println("from test : " + a);
+		};
+	}
+}

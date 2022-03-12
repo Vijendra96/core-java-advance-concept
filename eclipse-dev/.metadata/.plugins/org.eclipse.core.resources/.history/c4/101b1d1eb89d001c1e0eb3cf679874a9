@@ -1,0 +1,29 @@
+package pack1;
+class Test
+{
+	class R
+	{
+		
+	}
+	static class S
+	{
+		
+	}
+}
+public class D {
+	public static void main(String[] args) {
+		//R r1 = null;
+		//S s1 = null;
+		
+		Test.R r2 = null;
+		Test.S s2 = null;
+		
+		Test.R r3 = new Test().new R();
+		Test.S s3 = new Test.S();	//static members should be access through class name
+		
+		System.out.println("done");
+	}
+}
+
+
+//

@@ -1,0 +1,19 @@
+package pack1;
+class F
+{
+	int i;
+	F(int i)
+	{
+		this.i = i;
+	}
+	
+	@Override
+	public String toString() {
+		return "i = " + i;
+	}
+}
+public class M6 {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,43 @@
+package com.kharwar.vijendra;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+//to check brackets are balanced or not with multiple brackets
+public class V35 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a line of words eith multiple brackets...");
+		String s1 = sc.nextLine();
+		ArrayList<Character> list = new ArrayList<Character>();
+		String openBrackets = "({";
+		String closingBrackets = ")}";
+		boolean isBalanced = true;
+		char currentChar;
+		for (int i = 0; i < s1.length(); i++) 
+		{
+			currentChar = s1.charAt(i);
+			if(openBrackets.indexOf(currentChar) != -1)
+			{
+				list.add(currentChar);
+			}else if(closingBrackets.indexOf(currentChar) != -1)
+			{
+				if(list.size() != -1 && compare(currentChar, list.get(list.size() - 1)))
+				{
+					list.remove(list.size() - 1);
+				}
+				else
+				{
+					isBalanced = false;
+					break;
+				}
+			}
+		}
+		System.out.println(isBalanced && list.size() == 0 ? (s1 + " : is balanced") : (s1 + " is not balanced"));
+	}
+
+	private static boolean compare(char closeBracket, char openBracket) 
+	{
+		return (openBracket == '(' && closingBracket == ')') || (openBracket == '{' && closeBracket == '}');
+	}
+}

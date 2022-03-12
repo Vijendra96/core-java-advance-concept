@@ -1,0 +1,27 @@
+package com.kharwar.vijendra;
+
+import java.util.Scanner;
+
+//to check brackets are balance or not?
+public class V34 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a line of word with '(' and ')' ...");
+		String s1 = sc.nextLine();
+		int i = s1.indexOf('(');
+		int count1 = 0;
+		while(i != -1)
+		{
+			count1 ++;
+			i = s1.indexOf('(', i);
+		}
+		int i = s1.indexOf(')');
+		int count2 = 0;
+		while(i != -1)
+		{
+			count2 ++;
+			i = s1.indexOf(')', i);
+		}
+		System.out.println((count1 == count2 ? ("brackets are balanced") : ("brackets are not balanced")));
+	}
+}

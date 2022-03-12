@@ -1,0 +1,13 @@
+package com.stringLogical;
+
+import java.util.Scanner;
+
+public class B1 {
+	public static void main(String[] args) {
+		String email = "vijendra.p@gmail.com";
+		int j = email.indexOf('@');
+		int i = email.indexOf('.');
+		String s2 = email.substring(++i, j);
+		System.out.println(i + " ," + j + ", "+  s2 );
+	}
+}

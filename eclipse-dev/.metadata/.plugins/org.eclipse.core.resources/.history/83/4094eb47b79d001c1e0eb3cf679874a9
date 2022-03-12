@@ -1,0 +1,26 @@
+package pack1;
+
+public class A {
+	class B
+	{
+		
+	}
+	static class C
+	{
+		
+	}
+	private class D{
+		
+	}
+	protected class E
+	{
+		
+	}
+	public static void main(String[] args) {
+		System.out.println("done..");
+	}
+
+}
+//class inside class is called inner class
+//inner class within any access level.inner class even static also
+//outer class should not be static, private or protected.

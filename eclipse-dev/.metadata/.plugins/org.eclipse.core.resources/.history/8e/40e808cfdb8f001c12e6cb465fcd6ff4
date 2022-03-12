@@ -1,0 +1,37 @@
+package com.stringLogical;
+
+import java.util.Scanner;
+
+public class B1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter your email id ...");
+		String email = sc.nextLine();
+		int i = email.indexOf('.');
+		if(i != -1)
+		{
+			int j = email.indexOf('@');
+			String s1 = email.substring(i, j);
+			if(s1 != null || s1.isEmpty()|| s1.trim().isEmpty())
+			{
+				if(j != -1)
+				{
+					i = email.indexOf('.', i + 1);
+					if(i != -1)
+					{
+						System.out.println(email + " is in proper format");
+					}
+				}else
+				{
+					System.out.println(email + " doesn't have minimum onr . after @");
+				}
+			}else
+			{
+				System.out.println(email + " doesn't have minimum word/char after .");
+			}
+		}else
+		{
+			System.out.println(email + " does not have a string after dot");
+		}
+	}
+}

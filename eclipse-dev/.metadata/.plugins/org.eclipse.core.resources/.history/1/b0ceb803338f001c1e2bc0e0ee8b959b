@@ -1,0 +1,12 @@
+package com.StringBuffer;
+
+public class M2 {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer();
+		int i = 5;
+		sb.append("vijendra");
+		System.out.println(sb);
+		String s1 = String.valueOf(i);
+		System.out.println(sb + " , " + s1);
+	}
+}

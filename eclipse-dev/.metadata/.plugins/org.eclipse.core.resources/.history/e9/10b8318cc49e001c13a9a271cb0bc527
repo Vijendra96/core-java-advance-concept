@@ -1,0 +1,21 @@
+package com.multiThreading;
+class Z
+{
+	synchronized void test1(Z obj)
+	{
+		System.out.println("test1 begin");
+		Util.sleep(200);
+		obj.test2(this);
+		System.out.println("test1 end");
+	}
+	synchronized void test2(Z obj)
+	{
+		System.out.println("test2 begin");
+		Util.sleep(200);
+		obj.test1(this);
+		System.out.println("test2 end");
+	}
+}
+public class M21 {
+	
+}

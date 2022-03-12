@@ -1,0 +1,23 @@
+package pack1;
+
+public class F {
+	public static void main(String[] args) {
+		int i = 0;
+		final int j = 0;
+		
+		class A
+		{
+			void test()
+			{
+				System.out.println(i);
+				System.out.println(j);
+			}
+		}
+		
+		//i = 0;
+	}
+}
+
+
+//	i will be acting as a final it can not modified further
+// inside a local inner class only final is required

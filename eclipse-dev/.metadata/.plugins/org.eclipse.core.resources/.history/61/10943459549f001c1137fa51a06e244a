@@ -1,0 +1,28 @@
+package pack4;
+
+class Test implements A
+{
+	public void test1()
+	{
+		System.out.println("from test");
+	}
+}
+public class M1 {
+	public static void main(String[] args) {
+		A a1 = new A()
+				{
+					public void test1() 
+					{
+						System.out.println("from AIC");	
+					}
+				};
+		
+		A a2 = () -> System.out.println("from lamda expression");
+		A a2 = () -> {
+						System.out.println("from lamda exp");
+						System.out.println("from lamda exp");
+						System.out.println("from lamda exp");
+						System.out.println("from lamda exp");
+					 };
+	}
+}

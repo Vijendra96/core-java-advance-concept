@@ -1,0 +1,26 @@
+package pack1;
+
+import pack1.B.P;
+import pack1.B.Q;
+
+public class C {
+	class P
+	{
+		
+	}
+	static class Q
+	{
+		
+	}
+	public static void main(String[] args) {
+		//P p1 = new P();
+		Q q1 = new Q();
+		
+		C c1 = new C();
+		P p2 = c1.new P();
+		System.out.println("done ...");
+	}
+}
+
+//non static member can not be used inside the static method.
+//class Q is the static and main method is also static

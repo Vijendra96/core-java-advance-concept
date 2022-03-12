@@ -1,0 +1,25 @@
+package pack1;
+class J
+{
+	int a, b;
+	J(int a, int j)
+	{
+		this.a = a;
+		this.b = b;
+	}
+	@Override
+	public int hashCode() {
+		int hash = Integer.toString(a).hashCode();
+		hash += Integer.toString(b).hashCode();
+		return super.hashCode();
+	}
+}
+public class M10 {
+	public static void main(String[] args) {
+		J j1 = new J(1000, 2020);
+		J j2 = new J(1000, 2020);
+		
+		System.out.println(j1.hashCode());
+		System.out.println(j2.hashCode());
+	}
+}

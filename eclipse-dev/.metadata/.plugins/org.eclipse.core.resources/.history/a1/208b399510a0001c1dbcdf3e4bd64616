@@ -1,0 +1,12 @@
+package pack1;
+class D
+{
+	int i, j;
+	String s1, s2;
+	double m, n;
+	boolean flag, isStatus;
+	
+}
+public class M4 {
+
+}

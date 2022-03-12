@@ -1,0 +1,20 @@
+package pack1;
+class Test
+{
+	class R
+	{
+		
+	}
+	static class S
+	{
+		
+	}
+}
+public class D {
+	public static void main(String[] args) {
+		Test t1 = new Test();
+		R r1 = t1.new R();
+		S s1 = null;
+		System.out.println("done");
+	}
+}

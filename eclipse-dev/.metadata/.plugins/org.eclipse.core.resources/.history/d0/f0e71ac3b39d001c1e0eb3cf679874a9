@@ -1,0 +1,23 @@
+package pack1;
+
+import pack1.B.P;
+import pack1.B.Q;
+
+public class C {
+	class P
+	{
+		
+	}
+	static class Q
+	{
+		
+	}
+	public static void main(String[] args) {
+		P p1 = new P();
+		Q q1 = new Q();
+		
+		C c1 = new C();
+		
+		System.out.println("done ...");
+	}
+}

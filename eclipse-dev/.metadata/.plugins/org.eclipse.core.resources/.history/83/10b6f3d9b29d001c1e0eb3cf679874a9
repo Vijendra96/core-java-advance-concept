@@ -1,0 +1,20 @@
+package pack1;
+
+public class B {
+	class P
+	{
+		
+	}
+	static class Q
+	{
+		
+	}
+	public static void main(String[] args) {
+		P p1 = null;
+		Q q1 = null;
+		
+		B b1 = null;
+		
+		System.out.println("done ...");
+	}
+}
